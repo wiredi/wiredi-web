@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>wiredi-web-api</artifactId>
+    <version>${revision}</version>
+    <name>WireDi Web - API</name>
+
+    <parent>
+        <groupId>com.wiredi.web</groupId>
+        <artifactId>wiredi-web-parent</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <description>Web for WireDi</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.wiredi</groupId>
+            <artifactId>messaging-integration</artifactId>
+            <version>${wiredi.version}</version>
+        </dependency>
+
+        <!-- Test -->
+        <dependency>
+            <groupId>com.wiredi</groupId>
+            <artifactId>test-bundle</artifactId>
+            <version>${wiredi.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

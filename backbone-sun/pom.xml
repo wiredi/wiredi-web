@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>wiredi-web-backbone-sun</artifactId>
+    <version>${revision}</version>
+    <name>WireDi Web SUN Backbone</name>
+
+    <parent>
+        <groupId>com.wiredi.web</groupId>
+        <artifactId>wiredi-web-parent</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <description>Web for WireDi</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.wiredi</groupId>
+            <artifactId>test-bundle</artifactId>
+            <version>${wiredi.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.25.3</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.wiredi</groupId>
+            <artifactId>runtime-environment</artifactId>
+            <version>${wiredi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.wiredi.web</groupId>
+            <artifactId>wiredi-web</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.wiredi</groupId>
+            <artifactId>processors</artifactId>
+            <version>${wiredi.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.wiredi</groupId>
+            <artifactId>logback-bundle</artifactId>
+            <version>${wiredi.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>app</finalName>
+    </build>
+</project>
